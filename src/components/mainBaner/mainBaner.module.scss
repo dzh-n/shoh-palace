@@ -1,0 +1,62 @@
+@import "src/styles/variables";
+@import "src/styles/_mixins.scss";
+
+.mainBaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $secondary-black;
+}
+
+.wrapper {
+  color: $primary-white;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  width: 1200px;
+  margin-top: 200px;
+
+  @include laptop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 0;
+    text-align: start;
+
+    @include tablet-small{
+      font-size: 56px;
+    }
+    @include laptop{
+      font-size: 68px;
+    }
+  }
+}
+
+.btn {
+  width: 189px;
+  height: 44px;
+  margin-top: 15px;
+
+  background: linear-gradient(
+    99.45deg,
+    #eeba34 25.18%,
+    #ffd465 37.87%,
+    #ffc42c 46.89%,
+    #ffd465 55.24%,
+    #eeba34 71.6%,
+    #f8b638 86.63%
+  );
+}
+
+.img {
+  width: 690px;
+  height: 600px;
+}

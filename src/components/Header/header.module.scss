@@ -1,0 +1,78 @@
+@import "src/styles/variables";
+@import "src/styles/_mixins.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $secondary-dark;
+  position: fixed;
+  z-index: 2;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  padding: 25px 0px 25px 0px;
+
+  @include tablet{
+    width: 720px;
+  }
+  @include laptop{
+    width: 1200px;
+  }
+
+  .text {
+    
+    gap: 2rem;
+    color: $primary-white;
+    display: none;
+
+    @include laptop {
+      display: flex;
+    }
+  }
+}
+
+.divBtn{
+display: none;
+
+  @include tablet-small{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;}
+
+  @include laptop {
+    width: auto;
+  }
+}
+
+.btn {
+  width: 189px;
+  height: 44px;
+  
+
+  background: linear-gradient(
+    99.45deg,
+    #eeba34 25.18%,
+    #ffd465 37.87%,
+    #ffc42c 46.89%,
+    #ffd465 55.24%,
+    #eeba34 71.6%,
+    #f8b638 86.63%
+  );
+}
+
+.burger{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 23px 10px 10px 15px;
+  @include laptop {
+    display: none; 
+  }
+}

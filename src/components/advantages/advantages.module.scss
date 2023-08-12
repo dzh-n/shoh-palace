@@ -1,0 +1,97 @@
+@import "src/styles/variables";
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  color: $primary-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+  overflow: hidden;
+
+  .fontSize1 {
+    font-size: 36px;
+    margin: 0;
+  }
+}
+
+.text {
+  text-align: center;
+
+  .p {
+    font-size: 14px;
+  }
+}
+.fontSize2 {
+  font-size: 18px;
+}
+
+.slider {
+
+  gap: 15px;
+}
+.card {
+  background-color: $secondary-black;
+  text-align: center;
+  border: 1px solid #eeba34;
+  padding: 15px 0px 15px 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sliderWrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.imgAdvantages{
+    display: flex;
+    margin-top: 60px;
+    gap: 33px;
+}
+
+
+.colImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .8em;
+}
+
+.parkingcomand{
+  position: relative;
+}
+
+.parking{
+  position: absolute;
+  top: 320px;
+  font-size: 20px;
+  left: 10px;
+}
+
+.playgroundcomand{
+  position: relative;
+}
+
+
+.playground{
+  position: absolute;
+ top: 130px;
+ left: 10px;
+}
+
+.borderbot{
+  border-bottom: 1px solid #eeba34;
+padding-bottom: 7px;
+}

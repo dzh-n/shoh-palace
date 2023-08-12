@@ -1,0 +1,53 @@
+@import "src/styles/variables";
+
+.consultation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $primary-dark
+  }
+  
+  .wrapper {
+    color: $primary-white;
+    background-color: $secondary-gray2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    margin-top: 40px;
+    padding: 50px 0px 50px 0px;
+    }
+
+    .inputs{
+        
+
+        input{
+            outline: 0;
+            border: 1px solid #EEBA34;
+            color: $primary-white;
+            margin: 10px;
+            width: 300px;
+            padding: 10px;
+            background-color: $secondary-gray2;
+
+        }
+    }
+
+    button {
+        width: 169px;
+        height: 44px;
+        margin-top: 20px;
+      
+        background: linear-gradient(
+          99.45deg,
+          #eeba34 25.18%,
+          #ffd465 37.87%,
+          #ffc42c 46.89%,
+          #ffd465 55.24%,
+          #eeba34 71.6%,
+          #f8b638 86.63%
+        );
+      }
+      

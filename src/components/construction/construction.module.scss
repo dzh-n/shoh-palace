@@ -1,0 +1,49 @@
+@import "src/styles/variables";
+
+.construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $primary-dark;
+}
+
+.wrapper {
+  color: $primary-white;
+  display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  margin-top: 60px;
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+.year {
+  width: 141px;
+  height: 48px;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 30px;
+  background-color: #ffc42c;
+}
+
+.month{
+    border: 1px solid white;
+    background-color: $primary-dark;
+    color: $primary-white;
+    padding: 5px;
+    width: 158px ;
+    height: 48px;
+
+
+}

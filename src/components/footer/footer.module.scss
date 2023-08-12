@@ -1,0 +1,47 @@
+@import "src/styles/variables";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $secondary-dark;
+
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    padding: 25px 0px 25px 0px;
+
+    p{
+        color: $primary-white;
+
+        span{
+            color: $secondary-red;
+        }
+    }
+}
+
+    .logoTextIcon{
+        display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    }
+
+    .text{
+        color: $primary-white;
+        display: flex;
+        gap: 20px;
+        padding: 0 50px 40px 50px;
+        border-bottom: 1px solid;
+    }
+
+    .social{
+        display: flex;
+        gap: 20px;
+    }

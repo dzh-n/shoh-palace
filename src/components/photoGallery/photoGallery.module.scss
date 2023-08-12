@@ -1,0 +1,46 @@
+@import "src/styles/variables";
+
+.photoGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $primary-dark;
+  }
+  
+  .wrapper {
+    color: $primary-white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    overflow: hidden;
+
+    h1{
+      font-size: 36px;
+    }
+  }  
+
+  .home{
+    // display: flex;
+
+   
+  } 
+  .photoGallery1{
+      width: 348px;
+      height: 380px;
+  
+    }
+  .photoGallery2{
+      width: 348px;
+      height: 300px;
+    }
+  .photoGallery3{
+      width: 348;
+      height: 300px;
+    }
+
+ 

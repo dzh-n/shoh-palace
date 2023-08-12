@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $secondary-black;
+  }
+
+  .wrapper {
+    color: $primary-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 140px 0px 140px 0px;
+    h1{
+        font-size: 36px;
+        margin: 0;
+    }
+    }
+
+    .img{
+        width: 588px;
+        height: 360px;
+       
+      }
