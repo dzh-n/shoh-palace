@@ -1,125 +1,237 @@
 @import "src/styles/variables";
+@import "src/styles/_mixins.scss";
 
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $primary-dark;
+}
+
+.wrapper {
+  color: $primary-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $primary-width-mobile;
+  margin: 1.25rem 0 1.25rem 0;
+
+  @include tablet {
+    width: $primary-width-tablet;
+  }
+  @include laptop {
+    width: $primary-width-laptop;
+  }
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: $heading-primary-font-size-sm;
+
+  @include tablet {
+    font-size: $heading-primary-font-size-md;
+  }
+  @include laptop {
+    font-size: $heading-primary-font-size-lg;
+  }
+}
+
+.adresAndMap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20.5rem;
+
+  @include tablet {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: $primary-dark
   }
-  
-  .wrapper {
-    color: $primary-white;
-   
+
+  @include laptop {
+    flex-direction: row;
+  }
+}
+
+.contacts {
+  border: 1px solid #ffd465;
+  width: 19.375rem;
+  padding: 0.5625rem;
+  @include tablet {
+    width: $primary-width-tablet;
+    padding: 1.25rem;
+  }
+  @include laptop {
+    width: 35.625rem;
+    padding: 1.875rem;
+  }
+}
+
+.h2 {
+  padding-top: 0.625rem;
+  margin-top: 0;
+  margin-bottom: 0.9375rem;
+  font-size: 1rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+
+.connection {
+  display: flex;
+}
+
+.phoneiadres {
+  font-size: $primary-font-size-sm;
+  width: 100%;
+  @include tablet {
+    font-size: $primary-font-size-md;
+  }
+  @include laptop {
+    border-right: 1px solid;
+  }
+}
+
+.phone {
+  display: flex;
+  gap: 0.9375rem;
+  white-space: nowrap;
+}
+
+.adres {
+  display: flex;
+  gap: 0.9375rem;
+  white-space: nowrap;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  gap: 0.625rem;
+}
+
+.facebook {
+  width: 1.5rem;
+  @include tablet {
+    width: 2rem;
+  }
+}
+
+.application {
+  background-color: $secondary-gray2;
+  width: 20.5rem;
+
+  margin-top: 1.25rem;
+  text-align: center;
+  @include tablet {
+    width: $primary-width-tablet;
+    padding: 1.25rem;
+  }
+  @include laptop {
+    width: 35.625rem;
+    text-align: start;
+    padding: 1.875rem;
+  }
+}
+
+.paragraph {
+  font-size: $primary-font-size-sm;
+  @include tablet {
+    font-size: $primary-font-size-md;
+  }
+}
+
+.btnInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+
+  @include laptop {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  outline: 0;
+  border: 1px solid #eeba34;
+  color: $primary-white;
+  margin-bottom: 0.625rem;
+  width: 16.5;
+  height: 2.0625rem;
+  padding: 0.125rem;
+  background-color: $secondary-gray2;
+  @include tablet {
+    width: 18.75rem;
+    display: flex;
+    flex-direction: row;
+  }
+  @include laptop {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    margin-top: 20px;
-    padding: 50px 0px 50px 0px;
-    }
+    padding: 0.625rem;
+  }
+}
 
-    .adresAndMap{
-        display: flex;
-    }
-
-
-    h1{
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-
-    h2{
-        margin-bottom: 15px;
-    }
-
-    .contacts{
-        border: 1px solid #FFD465;
-        width: 570px;
-        padding: 30px;
-    }
-
-.social{
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.625rem 0 0.625rem 0;
+  @include laptop {
     display: flex;
     justify-content: end;
     align-items: end;
     width: 100%;
-    gap: 20px;
+    margin-bottom: 0.625rem;
+  }
 }
 
-.connection{
-    display: flex;
-
+.button {
+  width: 6.125rem;
+  height: 2rem;
+  margin: 0;
+  background: linear-gradient(
+    99.45deg,
+    #eeba34 25.18%,
+    #ffd465 37.87%,
+    #ffc42c 46.89%,
+    #ffd465 55.24%,
+    #eeba34 71.6%,
+    #f8b638 86.63%
+  );
+  @include tablet {
+    width: 10.5rem;
+    height: 2.75rem;
+  }
 }
 
-    .phoneiadres{
-        border-right: 1px solid ;
-        width: 100%;
-    }
+.map {
+  border: 0;
+  margin-top: 1.25rem;
+  height: 10rem;
+  width: 20.5rem;
 
-    .phone{
-        display: flex;
-        gap: 15px;
-
-    }
-    .adres{
-        display: flex;
-        gap: 15px;
-    }
-
-    .application{
-        background-color: $secondary-gray2;
-        width: 570px;
-        padding: 31px;
-        margin-top: 20px;
-       
-    }
-
-
-.btnInput{
-    display: flex;
-    gap: 15px;
+  @include tablet {
+    width: $primary-width-tablet;
+    height: 18.75rem;
+  }
+  @include laptop {
+    width: 35rem;
+    height: 33.125rem;
+    margin-left: 0.625rem;
+    margin-top: 0;
+  }
 }
-
-    input{
-        display: flex;
-        flex-direction: column;
-        outline: 0;
-        border: 1px solid #EEBA34;
-        color: $primary-white;
-        margin-bottom: 10px;
-        width: 300px;
-        padding: 15px;
-        background-color: $secondary-gray2;
-
-    }
-
-    .btn{
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    button {
-        width: 169px;
-        height: 44px;
-        margin-top: 20px;
-        background: linear-gradient(
-          99.45deg,
-          #eeba34 25.18%,
-          #ffd465 37.87%,
-          #ffc42c 46.89%,
-          #ffd465 55.24%,
-          #eeba34 71.6%,
-          #f8b638 86.63%
-        );
-      }
-
-      .map{
-        border: 0;
-        margin-left: 10px;
-        height: 537px;
-        width: 560px;
-      }

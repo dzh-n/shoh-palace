@@ -1,46 +1,84 @@
 @import "src/styles/variables";
+@import "src/styles/_mixins.scss";
 
 .photoGallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: $primary-dark;
-  }
-  
-  .wrapper {
-    color: $primary-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $primary-dark;
+}
+
+.wrapper {
+  color: $primary-white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: $primary-width-mobile;
+  overflow: hidden;
+
+  @include tablet {
+    width: $primary-width-tablet;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
-    margin-top: 60px;
+    margin-top: 10px;
     padding-bottom: 50px;
-    overflow: hidden;
+  }
 
-    h1{
-      font-size: 36px;
-    }
-  }  
+  @include laptop {
+    width: $primary-width-laptop;
+  }
+}
 
-  .home{
-    // display: flex;
+.h1 {
+  font-size: 36px;
+}
 
-   
-  } 
-  .photoGallery1{
-      width: 348px;
-      height: 380px;
-  
-    }
-  .photoGallery2{
-      width: 348px;
-      height: 300px;
-    }
-  .photoGallery3{
-      width: 348;
-      height: 300px;
-    }
+.home {
+  overflow: hidden;
+  width: 100%;
+}
+.photoGallery1 {
+  // width: 328px;
+  // height: 240px;
+  width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+  // @include tablet {
+  //   width: 348px;
+  //   height: 380px;
+  // }
+  // @include laptop {
+  //   width: 588px;
+  //   height: 400px;
+  // }
+}
+.photoGallery2 {
+  width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+  // width: 348px;
+  // height: 300px;
+}
+.photoGallery3 {
+  width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+  // width: 348px;
+  // height: 300px;
+}
 
- 
+.arrowLeft {
+  position: absolute;
+  left: 43%;
+}
+.arrowRight {
+  position: absolute;
+  right: 43%;
+}

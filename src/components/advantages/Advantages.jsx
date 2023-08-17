@@ -14,8 +14,8 @@ function Advantages() {
     <div className={classes.advantages}>
       <div className={classes.wrapper}>
         <div className={classes.text}>
-          <h1 className={classes.fontSize1}>Основные преимущества</h1>
-          <p>
+          <h1 className={classes.h1}>Основные преимущества</h1>
+          <p className={classes.paragraph}>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi Ut enim ad <br />
             minim veniam. Ut enim ad minim veniam, quis nostrud exercitation
@@ -27,11 +27,11 @@ function Advantages() {
             slidesPerView={2}
             spaceBetween={16}
             breakpoints={{
-              600: {
+              720: {
                 slidesPerView: 2,
                 spaceBetween: 24,
               },
-              1024: {
+              1200: {
                 slidesPerView: 3,
                 spaceBetween: 24,
               },
@@ -40,8 +40,8 @@ function Advantages() {
             <SwiperSlide>
               <div className={classes.card}>
                 <img src={icon} alt="" />
-                <h1 className={classes.fontSize2}>Охранная система</h1>
-                <p>
+                <h1 className={classes.h2}>Охранная система</h1>
+                <p className={classes.paragraph2}>
                   Ut enim ad minim veniam, quis nostrud <br /> exercitation
                   ullamco laboris nisi.
                 </p>
@@ -50,8 +50,8 @@ function Advantages() {
             <SwiperSlide>
               <div className={classes.card}>
                 <img src={icon} alt="" />
-                <h1 className={classes.fontSize2}>Охранная система</h1>
-                <p>
+                <h1 className={classes.h2}>Охранная система</h1>
+                <p className={classes.paragraph2}>
                   Ut enim ad minim veniam, quis nostrud <br /> exercitation
                   ullamco laboris nisi.
                 </p>
@@ -60,8 +60,8 @@ function Advantages() {
             <SwiperSlide>
               <div className={classes.card}>
                 <img src={icon} alt="" />
-                <h1 className={classes.fontSize2}>Охранная система</h1>
-                <p>
+                <h1 className={classes.h2}>Охранная система</h1>
+                <p className={classes.paragraph2}>
                   Ut enim ad minim veniam, quis nostrud <br /> exercitation
                   ullamco laboris nisi.
                 </p>
@@ -70,8 +70,8 @@ function Advantages() {
             <SwiperSlide>
               <div className={classes.card}>
                 <img src={icon} alt="" />
-                <h1 className={classes.fontSize2}>Охранная система</h1>
-                <p>
+                <h1 className={classes.h2}>Охранная система</h1>
+                <p className={classes.paragraph2}>
                   Ut enim ad minim veniam, quis nostrud <br /> exercitation
                   ullamco laboris nisi.
                 </p>
@@ -81,25 +81,35 @@ function Advantages() {
         </div>
         <div className={classes.imgAdvantages}>
           <div className={classes.parkingcomand}>
-            <p className={classes.parking}><span className={classes.borderbot}>ЛИЧНЫЙ</span> ПАРКИНГ</p>
-            <img src={parking} alt="" />
+            <p className={classes.parking}>
+              <span className={classes.borderbottom}>ЛИЧНЫЙ</span> ПАРКИНГ
+            </p>
+            <img className={classes.parkingImg} src={parking} alt="" />
           </div>
           <div className={classes.colImg}>
             <div className={classes.playgroundcomand}>
-              <img src={playground} alt="" />{" "}
-              <p className={classes.playground}><span className={classes.borderbot}>ДЕТСКАЯ П</span>ЛОЩАДКА</p>
+              <img className={classes.playgroundImg} src={playground} alt="" />{" "}
+              <p className={classes.playground}>
+                <span className={classes.borderbottom}>ДЕТСКАЯ П</span>ЛОЩАДКА
+              </p>
+            </div>
+            <div className={classes.videoSurveillanceComand}>
+              <img className={classes.videoSurveillance} src={videoSurveillance} alt="" />{" "}
+              <p className={classes.playground}>
+                <span className={classes.borderbottom}>ВИДЕОНА</span>БЛЮДЕНИЕ
+              </p>
             </div>
             <div className={classes.playgroundcomand}>
-              <img src={videoSurveillance} alt="" />{" "}
-              <p  className={classes.playground}><span className={classes.borderbot}>ВИДЕОНА</span>БЛЮДЕНИЕ</p>
+              <img className={classes.closedYardImg} src={closedYard} alt="" />{" "}
+              <p className={classes.playground}>
+                <span className={classes.borderbottom}>ЗАКРЫТЫЙ</span> ДВОР
+              </p>
             </div>
-            <div className={classes.playgroundcomand}>
-              <img src={closedYard} alt="" />{" "}
-              <p  className={classes.playground}><span className={classes.borderbot}>ЗАКРЫТЫЙ</span> ДВОР</p>
-            </div>
-            <div className={classes.playgroundcomand}>
-              <img src={waterSystem} alt="" />{" "}
-              <p className={classes.playground}><span className={classes.borderbot}>СИСТЕМА</span> ВОДОСНОБЖЕНИЯ</p>
+            <div className={classes.waterSystemComand}>
+              <img className={classes.waterSystem} src={waterSystem} alt="" />{" "}
+              <p className={classes.playground}>
+                <span className={classes.borderbottom}>СИСТЕМА</span> ВОДОСНОБЖЕНИЯ
+              </p>
             </div>
           </div>
         </div>

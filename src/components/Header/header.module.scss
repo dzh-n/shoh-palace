@@ -13,38 +13,73 @@
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 360px;
-  padding: 25px 0px 25px 0px;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: $primary-width-mobile;
+  padding: 0.25rem 0rem 0.25rem 0rem;
 
-  @include tablet{
-    width: 720px;
+  @include tablet {
+    width: $primary-width-tablet;
+    padding: 1rem 0rem 1rem 0rem;
   }
-  @include laptop{
-    width: 1200px;
+  @include laptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $primary-width-laptop;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+  }
+
+  .wrapperMobail{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+@include laptop{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   }
 
   .text {
-    
     gap: 2rem;
     color: $primary-white;
     display: none;
-
+    cursor: pointer;
     @include laptop {
       display: flex;
     }
   }
 }
 
-.divBtn{
-display: none;
+.logo{
+  width: 3rem;
+  @include tablet{
+    width: 4.5rem;
+  }
+  @include laptop{
+    width: 5rem;
+  }
+}
 
-  @include tablet-small{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 100%;}
+.active{
+  border-bottom: 1px solid #ffc42c;
+}
+.notActive{
+ border: none;
+}
+
+.divBtn {
+  display: none;
+
+  @include tablet{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+  }
 
   @include laptop {
     width: auto;
@@ -52,9 +87,8 @@ display: none;
 }
 
 .btn {
-  width: 189px;
-  height: 44px;
-  
+  width: 11.75rem;
+  height: 2.75rem;
 
   background: linear-gradient(
     99.45deg,
@@ -67,12 +101,36 @@ display: none;
   );
 }
 
-.burger{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 23px 10px 10px 15px;
+.burgerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.625rem 0.625rem 0.625rem 1rem;
+  width: 2rem;
+  height: 2rem;
   @include laptop {
-    display: none; 
+    display: none;
+  }
+}
+
+.cross{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:2.5rem;
+  height:2.5rem;
+}
+
+.textMobail{
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-dark;
+  color: $primary-white;
+  margin-top: 1.25rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+  @include laptop{
+    display: none;
   }
 }

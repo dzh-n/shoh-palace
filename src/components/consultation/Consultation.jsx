@@ -5,13 +5,25 @@ function Consultation() {
   return (
     <div className={classes.consultation}>
       <div className={classes.wrapper}>
-        <h1>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h1>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-        <div className={classes.inputs}>
-          <input placeholder="Ваше имя*" type="text" />
-          <input placeholder="Номер телефона или email*" type="text" />
+        <h1 className={classes.h1}>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h1>
+        <p className={classes.paragraph}>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        </p>
+        <div className={classes.inputIbutton}>
+          <div className={classes.inputs}>
+            <input
+              className={classes.input}
+              placeholder="Ваше имя*"
+              type="text"
+            />
+            <input
+              className={classes.input}
+              placeholder="Номер телефона или email*"
+              type="text"
+            />{" "}
+          </div>
+          <button className={classes.buttonSend}>Отправить</button>
         </div>
-        <button>Отправить</button>
       </div>
     </div>
   );

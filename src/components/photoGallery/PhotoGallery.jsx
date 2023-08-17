@@ -3,6 +3,8 @@ import classes from "./photoGallery.module.scss";
 import photoGallery1 from "../img/photoGallery1.png";
 import photoGallery2 from "../img/photoGallery2.png";
 import photoGallery3 from "../img/photoGallery3.png";
+import arrowL from "../img/logo/arrowL.svg";
+import arrowR from "../img/logo/arrowR.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -17,21 +19,25 @@ function PhotoGallery() {
   return (
     <div className={classes.photoGallery}>
       <div className={classes.wrapper}>
-        <h1>Фотогалерея</h1>
+        <h1 className={classes.h1}>Фотогалерея</h1>
         <div className={classes.home}>
           <Swiper
-            effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={"auto"}
+            slidesPerView={3}
+            spaceBetween={24}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
               depth: 100,
               modifier: 1,
-              slideShadows: true,
             }}
-            pagination={true}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+              type: "fraction",
+            }}
+            navigation={{ nextEl: ".arrowLeft", prevEl: ".arrowRight" }}
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
           >
@@ -56,6 +62,8 @@ function PhotoGallery() {
                 alt=""
               />{" "}
             </SwiperSlide>
+            <img src={arrowL} className={classes.arrowLeft} alt="" />
+            <img src={arrowR} className={classes.arrowRight} alt="" />
           </Swiper>
         </div>
       </div>
