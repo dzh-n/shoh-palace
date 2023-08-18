@@ -56,6 +56,7 @@ function Footer() {
             </div>
           </div>
         </div>
+      
         <p>
           Product by <span>BO</span>/BO
         </p>

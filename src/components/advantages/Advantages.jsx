@@ -23,7 +23,7 @@ function Advantages() {
           </p>
         </div>
         <div className={classes.sliderWrapper}>
-          <Swiper
+          <Swiper 
             slidesPerView={2}
             spaceBetween={16}
             breakpoints={{

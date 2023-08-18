@@ -35,7 +35,7 @@ function PhotoGallery() {
             pagination={{
               clickable: true,
               dynamicBullets: true,
-              type: "fraction",
+              type: "fraction"
             }}
             navigation={{ nextEl: ".arrowLeft", prevEl: ".arrowRight" }}
             modules={[EffectCoverflow, Pagination]}

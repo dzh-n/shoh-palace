@@ -72,9 +72,10 @@
 }
 
 .btn {
-  width: 11.75rem;
-  height: 2.75rem;
+  width: 9rem;
+  height: 2rem;
   margin: 1rem 0px 1rem 0px;
+  border: none;
   background: linear-gradient(
     99.45deg,
     #eeba34 25.18%,
@@ -84,6 +85,10 @@
     #eeba34 71.6%,
     #f8b638 86.63%
   );
+
+  @include laptop{
+    width: 10rem;
+  }
 }
 
 .img {

@@ -63,17 +63,17 @@
 }
 
 .btn {
-  width: 12rem;
+  width: 9rem;
   height: 1.5rem;
   white-space: nowrap;
   gap: 0.625rem;
   background: $secondary-gray;
   margin-top: 0.25rem;
   border: none;
-
+font-size: $primary-font-size-sm;
   @include tablet {
     width: 10rem;
-    
+    font-size: $primary-font-size-md;
   }
   @include laptop {
     width: 12rem;

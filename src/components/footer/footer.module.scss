@@ -30,12 +30,12 @@
     width: 100%;
   }
 
-  .logo{
+  .logo {
     width: 3rem;
-    @include tablet{
+    @include tablet {
       width: 4.5rem;
     }
-    @include laptop{
+    @include laptop {
       width: 5rem;
     }
   }
@@ -47,8 +47,6 @@
       color: $primary-white;
       display: flex;
       gap: 1.25rem;
-      padding: 0 3.125rem 2.5rem 3.125rem;
-      border-bottom: 1px solid;
     }
   }
 
@@ -62,8 +60,21 @@
   }
 
   p {
+    text-align: center;
     color: $primary-white;
-
+    padding: 0.5rem 0rem 0rem 0rem;
+    border-top: 1px solid;
+    width: 200px;
+    margin-top: 40px;
+    font-size: $primary-font-size-sm;
+    @include tablet {
+      font-size: $primary-font-size-md;
+      padding: 1rem 2rem 0rem 2rem;
+      width: 400px;
+    }
+    @include laptop {
+      width: 500px;
+    }
     span {
       color: $secondary-red;
     }

@@ -20,7 +20,7 @@
   width: $primary-width-mobile;
   margin-top: 3.75rem;
   padding-bottom: 3.125rem;
-  overflow: hidden;
+  overflow: hidden ;
 
   @include tablet {
     width: $primary-width-tablet;

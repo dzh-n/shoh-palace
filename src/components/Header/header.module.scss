@@ -87,9 +87,9 @@ align-items: center;
 }
 
 .btn {
-  width: 11.75rem;
-  height: 2.75rem;
-
+  width: 11rem;
+  height: 2.7rem;
+border: none;
   background: linear-gradient(
     99.45deg,
     #eeba34 25.18%,
@@ -99,6 +99,11 @@ align-items: center;
     #eeba34 71.6%,
     #f8b638 86.63%
   );
+
+  @include tablet{
+    width: 9rem;
+    height: 2rem;
+  }
 }
 
 .burgerMenu {
