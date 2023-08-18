@@ -93,6 +93,7 @@
   @include tablet {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -104,9 +105,19 @@
 
 .parking {
   position: absolute;
-  top: 20rem;
+  top: 11rem;
   font-size: 1.25rem;
   left: 0.625rem;
+
+  @include tablet{
+    top: 14.5rem;
+    left: 0.625rem;
+  }
+
+  @include laptop{
+    top: 20rem;
+    left: 0.625rem;
+  }
 }
 
 .parkingImg{
@@ -126,7 +137,7 @@
   width: 175px;
   display: block;
   object-fit: cover;
-
+margin: 10px;
   @include tablet{
     width: 255px;
     height: 138px;
@@ -134,13 +145,14 @@
   @include laptop{
     width: 283px;
     height: 188px;
+    margin: 0;
   }
 }
 .playgroundImg{
   width: 175px;
   display: block;
   object-fit: cover;
- 
+ margin: 10px;
   @include tablet{
     width: 255px;
     height: 138px;
@@ -148,6 +160,7 @@
   @include laptop{
     width: 283px;
     height: 188px;
+    margin: 0;
   }
 }
 
@@ -211,8 +224,19 @@
 
 .playground {
   position: absolute;
-  top: 8.125rem;
-  left: 0.625rem;
+  top: 5.3rem;
+  left: 1.2rem;
+  font-size: 12px;
+
+  @include tablet{
+    top: 6.5rem;
+    left: 1rem;
+  }
+
+  @include laptop{
+    top: 8.125rem;
+    left: 0.625rem;
+  }
 }
 
 .slider {
